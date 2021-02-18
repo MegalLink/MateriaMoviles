@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    android:backgroundTint="#FF9800"
+    tools:context=".AgregarCancionActivity">
+
+    <Button
+        android:id="@+id/btn_agregar_a_main"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="#8BC34A"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Menu Principal"
+        android:textColor="#FBFBFB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_agregar_a_lista"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="1dp"
+        android:background="#8BC34A"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Lista Canciones"
+        android:textColor="#FBFBFB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_agregar_a_main"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_agregar_modificar_c"
+        android:layout_width="377dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="#000000"
+        android:backgroundTint="#9A000000"
+        android:text="Agregar Cancion"
+        android:textAlignment="center"
+        android:textColor="#F8F8F8"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_nombre"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#FDFDFD"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:hint="Nombre Cancion"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:singleLine="false"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textColorHighlight="#3F51B5"
+        android:textColorHint="#FDFBFB"
+        android:textColorLink="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_agregar_modificar_c" />
+
+    <EditText
+        android:id="@+id/et_autor-genero"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FDFDFD"
+        android:ems="10"
+        android:hint="Autor/Grupo"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:textColor="#000000"
+        android:textColorHighlight="#3F51B5"
+        android:textColorHint="#FDFCFC"
+        android:textColorLink="#673AB7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_nombre" />
+
+    <EditText
+        android:id="@+id/et_genero"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FAFAFA"
+        android:ems="10"
+        android:hint="Genero"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:textColor="#050505"
+        android:textColorHighlight="#3F51B5"
+        android:textColorHint="#FBFBFB"
+        android:textColorLink="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_autor-genero" />
+
+    <EditText
+        android:id="@+id/et_acordes"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FDFDFD"
+        android:ems="10"
+        android:hint="Acordes"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:textColor="#000000"
+        android:textColorHighlight="#3F51B5"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_genero" />
+
+    <Button
+        android:id="@+id/btn_agregar_modificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="52dp"
+        android:background="#3F51B5"
+        android:text="Agregar"
+        android:textColor="#FDFDFD"
+        app:layout_constraintBottom_toTopOf="@+id/btn_agregar_a_lista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_acordes" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

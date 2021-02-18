@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Examen1Bimestre</string>
+    <string name="acordes">Acordes:</string>
+    <string name="cancion_seleccionada">Cancion Seleccionada</string>
+    <string name="nombre">Nombre:</string>
+    <string name="genero">Genero:</string>
+    <string name="autor">Autor:</string>
+    <string name="acorde">Acorde</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
